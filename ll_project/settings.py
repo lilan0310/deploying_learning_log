@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/dev/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/dev/ref/settings/
 """
-
+import os
+STATIC_URL='/static/'
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
