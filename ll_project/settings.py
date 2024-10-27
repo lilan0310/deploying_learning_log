@@ -16,7 +16,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_URL='/static/'
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
-ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS','localhost').split(',')
+ALLOWED_HOSTS = ['csuf.fra1.zeabur.app','localhost','127.0.0.1']
 
 
 # Quick-start development settings - unsuitable for production
